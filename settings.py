@@ -1,0 +1,1 @@
+maximum_number_of_items_per_page = 1024

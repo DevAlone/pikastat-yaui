@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Psst, don't tell moderators what's here</title>
+</head>
+
+<body>
+{% for comment in comments %}
+ <div>
+  <p>
+   <span>pikabu_id</span>
+   <span>{{ comment.pikabu_id }}</span>
+  </p>
+  <p>
+   <span>parent_id</span>
+   <span>{{ comment.parent_id }}</span>
+  </p>
+  <p>
+   <span>created_at_timestamp</span>
+   <span>{{ comment.created_at_timestamp}}</span>
+  </p>
+  <p>
+   <span>text</span>
+   <span>{{ comment.text}}</span>
+  </p>
+  <p>
+   <span>images</span>
+   <span>{{ comment.images}}</span>
+  </p>
+  <p>
+   <span>rating</span>
+   <span>{{ comment.rating}}</span>
+  </p>
+  <p>
+   <span>number_of_pluses</span>
+   <span>{{ comment.number_of_pluses}}</span>
+  </p>
+  <p>
+   <span>story_id</span>
+   <span>{{ comment.story_id}}</span>
+  </p>
+  <p>
+   <span>story_url</span>
+   <span>{{ comment.story_url}}</span>
+  </p>
+  <p>
+   <span>story_title</span>
+   <span>{{ comment.story_title}}</span>
+  </p>
+  <p>
+   <span>author_id</span>
+   <span>{{ comment.author_id}}</span>
+  </p>
+  <p>
+   <span>author_username</span>
+   <span>{{ comment.author_username}}</span>
+  </p>
+  <p>
+   <span>author_gender</span>
+   <span>{{ comment.author_gender}}</span>
+  </p>
+  <p>
+   <span>author_avatar_url</span>
+   <span>{{ comment.author_avatar_url}}</span>
+  </p>
+  <p>
+   <span>is_author_profile_deleted</span>
+   <span>{{ comment.is_author_profile_deleted}}</span>
+  </p>
+  <p>
+   <span>is_deleted</span>
+   <span>{{ comment.is_deleted}}</span>
+  </p>
+  <p>
+   <span>is_author_community_moderator</span>
+   <span>{{ comment.is_author_community_moderator}}</span>
+  </p>
+  <p>
+   <span>is_author_pikabu_team</span>
+   <span>{{ comment.is_author_pikabu_team}}</span>
+  </p>
+  <p>
+   <span>is_author_official</span>
+   <span>{{ comment.is_author_official}}</span>
+  </p>
+  <p>
+   <span>is_rating_hidden</span>
+   <span>{{ comment.is_rating_hidden}}</span>
+  </p>
+  <p>
+   <span>ignore_code</span>
+   <span>{{ comment.ignore_code}}</span>
+  </p>
+  <p>
+   <span>is_ignored_by_someone</span>
+   <span>{{ comment.is_ignored_by_someone}}</span>
+  </p>
+  <p>
+   <span>ignored_by</span>
+   <span>{{ comment.ignored_by}}</span>
+  </p>
+ </div>
+{% endfor %}
+
+</body>
+
+</html>
